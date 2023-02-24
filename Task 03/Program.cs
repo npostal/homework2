@@ -3,6 +3,7 @@
 // 3 -> Среда
 // 5 -> Пятница
 
+
 Console.WriteLine("Введите день недели");
 string day = Console.ReadLine();
 switch (day)
@@ -26,12 +27,12 @@ switch (day)
         {
             Console.WriteLine("Четверг");
             break;
-        }  
+        }
     case "5":
         {
             Console.WriteLine("Пятница");
             break;
-        }              
+        }
     case "6":
         {
             Console.WriteLine("Суббота");
@@ -41,10 +42,10 @@ switch (day)
         {
             Console.WriteLine("Воскресенье");
             break;
-        }   
+        }
     default:
         {
             Console.WriteLine("Неверный ввод");
             break;
-        } 
+        }
 }
