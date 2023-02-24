@@ -6,7 +6,14 @@
 
 Console.WriteLine("Введите натуральное число:");
 int number = Convert.ToInt32(Console.ReadLine());
-for (int i = -number; i <= number; i++)
+if (number > 0)
 {
-    Console.Write(i + " ");
+    for (int i = -number; i <= number; i++)
+    {
+        Console.Write(i + " ");
+    }
+}
+else
+{
+    Console.Write("Должно быть положительное целое число");
 }
