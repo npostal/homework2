@@ -6,23 +6,27 @@
 // 85 -> 8
 
 int number = new Random().Next(10, 100);
-Console.WriteLine($"Случайное число из отрезка 10 - 99 -> {number}");
+Console.WriteLine($"Случайное число из отрезка 10 - 99 -> {number}\n");
 int firstDigit = number / 10;
 int secondDigit = number % 10;
-//1
+
+Console.WriteLine("Первое решение");
+
 if (firstDigit > secondDigit)
 {
-    Console.WriteLine($"Наибольшая цифра числа -> {firstDigit}");
+    Console.WriteLine($"Наибольшая цифра числа -> {firstDigit}\n");
 }
 else
 {
-    Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}");
+    Console.WriteLine($"Наибольшая цифра числа -> {secondDigit}\n");
 }
-//2
-int result = firstDigit > secondDigit ? firstDigit : secondDigit;
-Console.WriteLine($"Наибольшая цифра числа -> {result}");
 
-//3
+Console.WriteLine("Второе решение");
+
+int result = firstDigit > secondDigit ? firstDigit : secondDigit;
+Console.WriteLine($"Наибольшая цифра числа -> {result}\n");
+
+Console.WriteLine("Третье решение");
 
 int maxDigit = MaxDigit(number);
 Console.WriteLine($"Наибольшая цифра числа -> {maxDigit}");
