@@ -12,7 +12,7 @@ int arraySize = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[arraySize];
 
 
-FillArray(array); 
+FillArray(array);
 int amountOfElements = AmountOfElements(array);
 PrintArray(array);
 Console.Write($"{amountOfElements}");
@@ -46,7 +46,7 @@ int AmountOfElements(int[] arr)
         {
             count++;
         }
-       
+
     }
     return count;
 }
